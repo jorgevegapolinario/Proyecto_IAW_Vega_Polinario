@@ -1,0 +1,89 @@
+﻿body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+	width: 1024px;
+  }
+
+  p {
+	font-size: 15px;
+  }
+
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  
+  li a:hover {
+    -moz-box-shadow: 0px 0px 30px #ffffff; 
+	-webkit-box-shadow: 0px 0px 30px #ffffff; 
+	box-shadow: 0px 0px 30px #ffffff;
+  }
+
+  .navbar-fluid {
+	background-image: url('Header.png');
+	background-repeat: repeat;
+	border: none;
+}
+ 
+ li a {
+ 	 color: White;
+	 font-size: 16px;
+	 margin-top: 15px;
+ }
+
+ #logo{
+ 	 margin-bottom: 30px;
+	 margin-left: 10px;
+ }
+
+ .texto_footer{
+ 	 color: Gray;
+	 margin-top: 5px;
+	 margin-left: 25px;
+ }
+
+ .texto_footer b{
+ 	 color: #F5F5F5;
+ }
+
+ #footer{
+ 	 background-image: url('Footer.png');
+	 background-repeat: repeat;
+	 width: 1175px;
+ }
+
+ #contenedor{
+ 	 background-image: url('FondoVideo.png');
+	 background-repeat: no-repeat;
+	 width: 1350px;
+	 height: 400px;
+ }
+
+ .verde{
+ 	 color: Green;
+ }
+
+ #contenido1{
+ 	 color: #C1C1C1;
+ }
+
+  .rojo{
+ 	 color: #840000;
+ }
+
+ #cont{
+ 	 margin-left: 125px;
+	 margin-bottom: 50px;
+ }
+
+ #Boletin{
+	margin-left: 725px;
+	margin-top: -145px;
+	z-index: 1;
+ }
