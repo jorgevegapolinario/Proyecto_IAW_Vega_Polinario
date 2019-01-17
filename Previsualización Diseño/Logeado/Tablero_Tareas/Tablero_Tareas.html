@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tablero de Tareas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<style>
+
+	#Fondo{
+	background-image: url('BaseNav.png'); 
+	background-repeat: no-repeat;
+	background-size: cover; /* Arreglo temporal */
+	height: 1350px;
+	}
+
+	.Navegacion{
+		margin-top: 120px;
+	}
+
+	.IconoNav{
+		width: 25px;
+		height: 25px;
+		margin-right: 5px;
+	}
+
+	#Nav_Izq{
+		margin-top: 150px;
+		width: 250px;
+	}
+
+	#Nav_Izq li{
+		margin-bottom: 24px;
+		list-style: none;
+		text-align: center;
+		margin-left: -50px;
+	}
+
+	#Nav_Izq a{
+		color: White;
+		font-size: 19px;
+	}
+
+	#Perfil{
+		padding: 0px;
+		margin-top: -80px;
+	}
+
+	#AccesosDirectos{
+		width: 475px;
+		height: 75px;
+		background-image: url('BaseAccesos.png');
+		background-repeat: no-repeat;
+		margin-left: 400px;
+		margin-top: -7px;
+	}
+
+	#FlechaCerrar{
+		margin: 55px 458px;
+	}
+
+	#Leyenda{
+		width: 180px;
+		height: 250px;
+		background-image: url('BaseLeyenda.png');
+		background-repeat: no-repeat;
+		margin-left: 35px;;
+		margin-top: 250px;
+	}
+
+	#IconosLeyenda{
+		margin-left: 10px;
+	}
+
+	#SubtituloLeyenda{
+		font-size: 9px;
+		margin-top: 30px;
+		color: #292B75;
+	}
+
+	.checkbox{
+		margin-left: 20px;
+	}
+
+	.verde{
+		background-color: green!important;
+	}
+
+	.btn{
+		margin-left: 10px;
+		margin-top: -10px;
+		padding: 0px;
+	}
+
+	#TextoNLeyenda{
+		font-size: 12px;
+		margin-left: 3px;
+	}
+
+	#Tablero{
+		width:1017px;
+		height:1104px;
+		background-color: White;
+		margin-left: 310px;
+		margin-top: -950px;
+	}
+
+	.Tarea{
+		width: 340px;
+		height: 240px;
+		background-image: url('BaseTarea.png');
+		background-repeat: no-repeat;
+		margin-left: 100px;
+	}
+
+	.iconostarea{
+		margin-top: 25px;
+		margin-left: 60px;
+		width:70px;
+		height:30px;
+	}
+
+	.TituloTarea{
+		margin-left: 20px;
+		margin-top: 30px;
+		width: 180px;
+	}
+
+	.azul{
+		color: #292B75;
+	}
+
+	.verdes{
+		color: #29752C;
+	}
+
+	.rojo{
+		color: #752929;
+	}
+
+	.BotonNuevaTarea{
+		width:75px;
+		height:75px;
+		margin-top: 90px;
+		margin-left: 220px;
+	}
+
+</style>
+<body>
+    <div class="container-fluid justify-content-center" id="Fondo">
+		
+		<div id="AccesosDirectos" class="fixed-top">
+			<img src="FlechaCerrar.png" id="FlechaCerrar"><a href="#Cerrar"></a></img>
+		</div>
+
+		<nav class="navbar">
+            
+			<a style="color: White" class="navbar-brand" href="Tablero_Tareas.html"><img src="Logo.png" alt="Atlantis" style="padding: 15px;"></a>
+            <a style="color: White" class="navbar-brand Navegacion" href="Tablero_Tareas.html"><img class="IconoNav" src="Tareas.png"></img>Tareas</a>
+            <a style="color: White" class="navbar-brand Navegacion" href="../Calendario/Calendario.html"><img class="IconoNav" src="Calendario.png"></img>Calendario</a>
+            <a style="color: White" class="navbar-brand Navegacion" href="../Contraseñas/Contraseñas.html"><img class="IconoNav" src="Contraseñas.png"></img>Contraseñas</a>
+            <a style="color: White" class="navbar-brand Navegacion" href="../Accesos_Directos/Accesos_Directos.html"><img class="IconoNav" src="Accesos.png"></img>Accesos Directos</a>
+
+			<div id="Perfil" class="">
+
+				<a id="Salir" href="#Salir"><img src="IconoLogout.png" class="Icono"></img></a>
+				<a id="Opciones" href="#Opciones"><img src="IconoOpciones.png" class="Icono"></img></a>
+				
+				<img src="BasePerfil.png" id="Base"></img>
+
+			</div>
+
+        </nav>
+
+		<div id="Nav_Izq">
+
+			<ul class="justify-content-left">
+				<li><a href="#Nueva_Tarea">Nueva Tarea</a></li>
+				<li><a href="#Editar_Campos">Editar Campos</a></li>
+				<li><a href="#Recordatorios">Recordatorios</a></li>
+				<li><a href="#Cnf_Lynd">Configuración de leyendas</a></li>
+				<li><a href="#Nueva_Seccion">Nueva Sección</a></li>
+				<li><a href="#Accesos">Accesos Directos</a></li>
+				<li><a href="#Acuerdo">Acuerdo Legal de <span style="color: #787BED;">Atlantis</span></a></li>
+			</ul>
+
+			<div id="Leyenda">
+			
+				<form>
+					
+					<select class="selectpicker" id="IconosLeyenda">
+						<option data-icon="glyphicon glyphicon-star" data-subtext="Estrella"><img src="SelectEstrella.png"></img></option>
+						<option data-icon="glyphicon glyphicon-heart" data-subtext="Corazón">Corazón</option>
+						<option data-icon="glyphicon glyphicon-tags" data-subtext="Tag">Tag</option>
+						<option data-icon="glyphicon glyphicon-screenshot" data-subtext="Mira">Mira</option>
+					</select>
+
+					<label id="SubtituloLeyenda"><br><br>Selecciona el<br>marcador a<br>establecer.</label>
+
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Importante.</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="" class="verde	">Sin prisa.</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Casi Acabada.</label>
+					</div>
+
+					<button type="image" class="btn"><img src="NuevaLeyenda.png"></img></button><span id="TextoNLeyenda">Añadir nueva leyenda.</span>
+
+				</form>
+
+			</div>
+
+			<div id="Tablero" class="absolute">
+				
+				<div class="row">
+
+					<div class="Tarea row">
+
+						<div class="TituloTarea">
+							<h5 class="azul">Tareas Importantes</h5>
+						</div>
+
+						<div class="iconostarea">
+							<a id="Movil" href="#Movil"><img src="Movil.png" class="Icono"></img></a>
+							<a id="Editar" href="#Editar"><img src="Editar.png" class="Icono"></img></a>
+							<a id="Borrar" href="#Borrar"><img src="Borrar.png" class="Icono"></img></a>
+						</div>
+
+					</div>
+
+					<div class="Tarea row">
+					
+						<div class="TituloTarea">
+							<h5 class="verdes">Tareas Acabadas</h5>
+						</div>
+
+						<div class="iconostarea">
+							<a id="Movil" href="#Movil"><img src="Movil.png" class="Icono"></img></a>
+							<a id="Editar" href="#Editar"><img src="Editar.png" class="Icono"></img></a>
+							<a id="Borrar" href="#Borrar"><img src="Borrar.png" class="Icono"></img></a>
+						</div>
+
+					</div>
+
+					<div class="Tarea row">
+					
+						<div class="TituloTarea">
+							<h5 class="rojo">Tareas Pendientes</h5>
+						</div>
+
+						<div class="iconostarea">
+							<a id="Movil" href="#Movil"><img src="Movil.png" class="Icono"></img></a>
+							<a id="Editar" href="#Editar"><img src="Editar.png" class="Icono"></img></a>
+							<a id="Borrar" href="#Borrar"><img src="Borrar.png" class="Icono"></img></a>
+						</div>
+
+					</div>
+
+					<div class="">
+						
+						<button type="image" class="btn BotonNuevaTarea"><img src="BotonNuevaTarea.png"></img></button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+    </div>
+</body>
+</html>

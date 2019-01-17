@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Contáctanos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Estilos_Contactanos.css"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid" id="contenedor_ppal">
+		<!-- Navbar -->
+		<nav class="navbar navbar-fluid" style="position: absolute;">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a id="logo" class="navbar-brand" href="Inicio.html"><img src="Logo.png"></img></a>
+				</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="Inicio.html"><b>INICIO</b></a></li>
+					<li><a href="Servicios.html"><b>SERVICIOS</b></a></li>
+					<li><a href="Contactanos.html"><b>CONTÁCTANOS</b></a></li>
+					<li><a href="Inicio_Sesion.html"><b>ENTRAR</b></a></li>
+				</ul>
+			</div>
+			</div>
+		</nav>
+		<div>
+			<img src="Titulo.png" id="TituloImg"></img><br>
+			<img id="mapa" src="Mapa.png"></img>
+			<div id="formulario_contacto" class="container-fluid">
+				<form action="" method="post">
+					<input id="Nombre" class="input" placeholder="Nombre aquí..."/>
+					<input id="Correo" class="input2" placeholder="Correo electrónico aquí..."/>
+					<input id="Telefono" class="input2" placeholder="Teléfono de contacto aquí..."/>
+					<input id="Asunto" class="input2" placeholder="Asunto aquí..."/>
+					<textarea id="mensaje" class="textareastyle" rows="4" cols="2" placeholder="Escribe tu mensaje aquí..."></textarea>
+					<input type="submit" value="Enviar ahora" id="Enviar"></input>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
