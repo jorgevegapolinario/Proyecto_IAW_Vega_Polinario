@@ -1,0 +1,49 @@
+<?php
+  session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Usuarios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="usuariosadmin.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="cabecera" class="row">
+        <div id="logo"><img src="Logo.png" alt="Logo" class="navbar-brand"></div>
+        <a class="navbar-brand Navegacion" href="usuariosadmin.html"><div><img src="Usuarios.png" class="iconito"><b>Usuarios</b></div></a>
+        <a class="navbar-brand Navegacion" href="../Tareas/tareasadmin.html"><div><img src="Tareas.png" class="iconito"><b>Tareas</b></div></a>
+        <a class="navbar-brand Navegacion" href="../Pass/passadmin.html"><div><img src="Contraseñas.png" class="iconito"><b>Contraseñas</b></div></a>
+        <a class="navbar-brand Navegacion" href="../Accesos/accesosadmin.html"><div><img src="Accesos.png" class="iconito"><b>Accesos Directos</b></div></a>
+        <hr id="lineahorizontal">
+    </div>
+    <div id="buqueda" class="row">
+        <form>
+            <div id="buscar" class="row">
+                <input type="text" class="input" placeholder="Buscar Usuarios...">
+                <input type="image" src="iconolupa.png" id="iconolupa">
+            </div>
+        </form>
+    </div>
+	<div id="cuerpo">
+		<ul id="lista">
+			<li><span class="azul"><b>Nombre:</b></span> Jorge<span><input type="image" src="Editar.png" class="Editar"><input type="image" src="Borrar.png" class="Borrar"></span></li>
+			<li><span class="azul"><b>Apellidos:</b></span> Vega Polinario<span><input type="image" src="Editar.png" class="Editar"><input type="image" src="Borrar.png" class="Borrar"></span></li>
+			<li><span class="azul"><b>Género:</b></span> Masculino<span><input type="image" src="Editar.png" class="Editar"><input type="image" src="Borrar.png" class="Borrar"></span></li>
+			<li><span class="azul"><b>Correo:</b></span> jovegamers@gmail.com<span><input type="image" src="Editar.png" class="Editar"><input type="image" src="Borrar.png" class="Borrar"></span></li>
+			<li><span class="azul"><b>Tipo:</b></span> Administrador<span><input type="image" src="Editar.png" class="Editar"><input type="image" src="Borrar.png" class="Borrar"></span></li>
+			<li><span class="azul"><b>Teléfono:</b></span> 660262334<span><input type="image" src="Editar.png" class="Editar"><input type="image" src="Borrar.png" class="Borrar"></span></li>
+			<li><span class="azul"><b>Edad:</b></span> 20 años<span><input type="image" src="Editar.png" class="Editar"><input type="image" src="Borrar.png" class="Borrar"></span></li>
+			<li><span class="azul"><b>Id_Usuario:</b></span> 1<span><input type="image" src="Editar.png" class="Editar"><input type="image" src="Borrar.png" class="Borrar"></span></li>
+		</ul>
+	</div>
+	<div id="footer" class="footer justify-content-center"></div>
+</body>
+</html>

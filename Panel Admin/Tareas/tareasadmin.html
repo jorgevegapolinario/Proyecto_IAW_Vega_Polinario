@@ -1,0 +1,81 @@
+<?php
+  session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tareas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="tareasadmin.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="cabecera" class="row">
+        <div id="logo"><img src="Logo.png" alt="Logo" class="navbar-brand"></div>
+        <a class="navbar-brand Navegacion" href="../Usuarios/usuariosadmin.html"><div><img src="Usuarios.png" class="iconito"><b>Usuarios</b></div></a>
+        <a class="navbar-brand Navegacion" href="tareasadmin.html"><div><img src="Tareas.png" class="iconito"><b>Tareas</b></div></a>
+        <a class="navbar-brand Navegacion" href="../Pass/passadmin.html"><div><img src="Contraseñas.png" class="iconito"><b>Contraseñas</b></div></a>
+        <a class="navbar-brand Navegacion" href="../Accesos/accesosadmin.html"><div><img src="Accesos.png" class="iconito"><b>Accesos Directos</b></div></a>
+        <hr id="lineahorizontal">
+    </div>
+    <div id="buqueda" class="row">
+        <form>
+            <div id="buscar" class="row">
+                <input type="text" class="input" placeholder="Buscar Tareas...">
+                <input type="image" src="iconolupa.png" id="iconolupa">
+            </div>
+        </form>
+    </div>
+	<div id="cuerpo">
+		 <table class="table">
+		  <thead class="thead-dark">
+			<tr>
+			  <th scope="col">Código</th>
+			  <th scope="col">Título</th>
+			  <th scope="col">Color</th>
+			  <th scope="col">Fecha</th>
+			  <th scope="col">Dueño</th>
+			  <th scope="col">Descripción</th>
+			  <th scope="col">#</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <th scope="row">1</th>
+			  <td>Tareas Pendientes</td>
+			  <td>Rojo</td>
+			  <td>29/10/2019</td>
+			  <td>Jorge Vega</td>
+			  <td>Ésta es la descripción...</td>
+			  <td><input type="image" src="Editar.png" class="edit"><input type="image" src="Borrar.png" class="edit"></td>
+			</tr>
+			<tr>
+			  <th scope="row">2</th>
+			  <td>Tareas Importantes</td>
+			  <td>Azul</td>
+			  <td>23/02/2019</td>
+			  <td>Antonio Fernández</td>
+			  <td>Ésta es la descripción...</td>
+			  <td><input type="image" src="Editar.png" class="edit"><input type="image" src="Borrar.png" class="edit"></td>
+			</tr>
+			<tr>
+			  <th scope="row">3</th>
+			  <td>Tareas Acabadas</td>
+			  <td>Verde</td>
+			  <td>*</td>
+			  <td>Juan Morales</td>
+			  <td>Ésta es la descripción...</td>
+			  <td><input type="image" src="Editar.png" class="edit"><input type="image" src="Borrar.png" class="edit"></td>
+			</tr>
+		  </tbody>
+		</table>
+	</div>
+	<div id="footer" class="footer justify-content-center"></div>
+</body>
+</html>
