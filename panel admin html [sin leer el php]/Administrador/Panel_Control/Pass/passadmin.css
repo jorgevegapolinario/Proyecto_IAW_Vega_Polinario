@@ -1,0 +1,99 @@
+body{
+    background-color: #efefef;
+}
+
+.Navegacion{
+    margin-left: 100px;
+    margin-top: 55px;
+    font-size: 18px;
+    color: #063b56;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.Navegacion:hover{
+    color: #1e50a0;
+}
+
+#logo{
+    margin-left: 30px;
+}
+
+#lineahorizontal{
+    width: 900px;         
+    margin-left: 320px;
+	margin-top: -70px;
+}
+
+.input{
+    display: inline-block;
+    background-color:rgba(0,0,0,0) !important;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 1px solid #b7b7b7;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: normal 16px/normal "Arial", Times, serif;
+    color: Grey;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    margin-left: 600px;
+    margin-top: 50px;
+}
+
+.edit{
+	margin-left: 3px;
+}
+
+#iconolupa{
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.iconito{
+	margin-right: 3px;
+}
+
+#cuerpo{
+	margin-top: 25px;
+}
+
+th{
+	text-align: center;
+}
+
+td{
+	text-align: center;
+}
+
+#footer{
+        background-image: url('Footer.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+		height: 220px;
+	}
+
+	#titulouser{
+		margin-left: 20px;
+		color: #062f3a;
+	}
+
+	#nombreuser{
+		margin-left: 10px;
+		color: #0b4293;
+	}
+
+	.titulos{
+		margin-top: 50px;
+	}
